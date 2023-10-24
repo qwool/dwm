@@ -1,3 +1,18 @@
+# my build of dwm
+how to use:  
+- change the variable in restart.sh according to the executable you'll run DWM as
+- modify ~/dwm/autoshart.sh - it starts everything there on exit
+- run ```make``` or ```sudo make install```
+- put the ```./restart.sh``` in your .xinitrc
+- you're set!
+- make sure to check out the themes at top of config.h, switch by uncommenting the 4 lines
+- all keybinds are supposed to be managed thru sxhkd for modularity
+
+dependencies: ```dmenu kitty j4-dmenu-desktop```
+fonts: ```JeetBrainsMono Nerd Font```
+
+
+
 dwm - dynamic window manager
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.
