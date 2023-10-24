@@ -33,10 +33,16 @@ static const char dmenufont[]       = "AestheticIosevka Nerd Font Bold:size=10";
 // static const char col_fgcontr[]  = "#181818";
 
 /* default */
-static const char col_bg[]       = "#222222";
-static const char col_fg[]       = "#005577";
-static const char col_text[]     = "#eeeeee";
-static const char col_fgcontr[]  = "#eeeeee";
+// static const char col_bg[]       = "#222222";
+// static const char col_fg[]       = "#005577";
+// static const char col_text[]     = "#eeeeee";
+// static const char col_fgcontr[]  = "#eeeeee";
+
+/* ider atp */
+static const char col_bg[]   = "#202020";  // Background
+static const char col_fg[]   = "#D4BE98";  // Foreground
+static const char col_text[] = "#f8f8f8";
+static const char col_fgcontr[]   = "#202020";  // Background
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -107,7 +113,10 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
-
+	
+ 	{ MODKEY|ShiftMask,             XK_h,      setcfact,       {.f = +0.25} },
+ 	{ MODKEY|ShiftMask,             XK_l,      setcfact,       {.f = -0.25} },
+ 	{ MODKEY|ShiftMask,             XK_o,      setcfact,       {.f =  0.00} },
 
 	{ MODKEY,           XK_a,      movestack,      {.i = +1 } },
 	{ MODKEY|ShiftMask,           XK_a,      movestack,      {.i = -1 } },
