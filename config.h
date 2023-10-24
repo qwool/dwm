@@ -7,36 +7,41 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=10:antialias=true:autohint=true" };
 static const char dmenufont[]       = "AestheticIosevka Nerd Font Bold:size=10";
-// static const char col_bg[] = "#202020";  // Background
-// static const char col_fg[] = "#D4BE98";  // Foreground
-// static const char col_ac[] = "#458588";  // Accent color
-// static const char col_red[] = "#fb4934";
-// static const char col_green[] = "#b8bb26";
-// static const char col_yellow[] = "#fabd2f";
-// static const char col_blue[] = "#83a598";
-// static const char col_purple[] = "#d3869b";
-// static const char col_aqua[] = "#8ec07c";
-// static const char col_orange[] = "#fe8019";
-// static const char col_gray1[] = "#282828";
-// static const char col_gray2[] = "#3c3836";
-// static const char col_gray3[] = "#928374";
-// static const char col_gray4[] = "#a89984";
-//
-// static const char col_cyan[] = "#83a598";
-// static const char *colors[][3]      = {
-// 	/*               fg         bg         border   */
-// 	[SchemeNorm] = { col_fg, col_bg,  col_bg },
-// 	[SchemeSel]  = { col_bg, col_fg,  col_fg  },
-// };
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
+
+/* gruvbox */
+// static const char col_bg[]       = "#282828";
+// static const char col_fg[]       = "#ebdbb2";
+// static const char col_text[]     = "#f8f8f8";
+// static const char col_fgcontr[]  = "#282828";
+
+/* DoomOne */
+// static const char col_bg[]       = "#282c34";
+// static const char col_fg[]       = "#c678dd";
+// static const char col_text[]     = "#bbc2cf";
+// static const char col_fgcontr[]  = "#282c34";
+
+/* bugswriter video rip */
+// static const char col_bg[]       = "#0E0C0C";
+// static const char col_fg[]       = "#DEA65B";
+// static const char col_text[]     = "#DEA65B";
+// static const char col_fgcontr[]  = "#0E0C0C";
+
+/* default dark */
+// static const char col_bg[]       = "#181818";
+// static const char col_fg[]       = "#f7ca88";
+// static const char col_text[]     = "#f7ca88";
+// static const char col_fgcontr[]  = "#181818";
+
+/* default */
+static const char col_bg[]       = "#222222";
+static const char col_fg[]       = "#005577";
+static const char col_text[]     = "#eeeeee";
+static const char col_fgcontr[]  = "#eeeeee";
+
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeNorm] = { col_text, col_bg, col_bg },
+	[SchemeSel]  = { col_fgcontr, col_fg,  col_fg  },
 };
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5" };
